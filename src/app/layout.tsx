@@ -34,8 +34,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'SmartFlow AI | Autonomous Workflows & Budget Tech Stack',
-    description: 'Autonomous AI workflows, budget local LLM hardware, and $0/mo free-tier engineering.',
+    title: 'SmartFlow AI | Smart Tech Deals, Everyday AI Tools & Productivity',
+    description: 'Your definitive guide to everyday AI tools, budget tech deals, smart desk setups, and modern productivity hacks.',
+    creator: '@weegantube',
+    site: '@weegantube',
     images: ['https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1200&auto=format&fit=crop&q=80'],
   },
   verification: {

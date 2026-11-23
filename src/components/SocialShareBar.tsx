@@ -27,7 +27,7 @@ export function SocialShareBar({ title, url }: SocialShareBarProps) {
   const shareLinks = [
     {
       name: 'X (Twitter)',
-      href: `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`,
+      href: `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}&via=weegantube&hashtags=TechDeals,BudgetTech,Productivity`,
       color: 'hover:bg-slate-800 text-slate-300 hover:text-white',
     },
     {

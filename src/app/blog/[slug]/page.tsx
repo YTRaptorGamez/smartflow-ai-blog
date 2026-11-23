@@ -52,6 +52,8 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
       card: 'summary_large_image',
       title: post.title,
       description: post.meta_description,
+      creator: '@weegantube',
+      site: '@weegantube',
       images: post.featured_image ? [post.featured_image] : undefined,
     },
   };
