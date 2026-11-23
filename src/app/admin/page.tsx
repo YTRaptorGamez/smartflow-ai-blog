@@ -31,7 +31,7 @@ export default function AdminDashboardPage() {
     notion_ref: 'smartflow',
     make_ref: 'smartflow',
     perplexity_ref: 'smartflow',
-    adsense_publisher_id: 'ca-pub-0000000000000000',
+    adsense_publisher_id: 'ca-pub-3634853583936763',
     enable_ads: true,
   });
   const [isSavingMonetization, setIsSavingMonetization] = useState(false);

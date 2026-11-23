@@ -45,7 +45,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const adsenseClientId = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID;
+  const adsenseClientId = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID || 'ca-pub-3634853583936763';
   const isRealAdsenseId = adsenseClientId && adsenseClientId !== 'ca-pub-0000000000000000';
 
   return (
