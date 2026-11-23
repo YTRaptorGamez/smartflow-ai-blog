@@ -8,11 +8,11 @@ import { AdSlot } from '@/components/AdSlot';
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
   title: {
-    default: 'SmartFlow AI | Autonomous Workflows & Budget Tech Stack for Solopreneurs',
+    default: 'SmartFlow AI | Smart Tech Deals, Everyday AI Tools & Productivity',
     template: '%s | SmartFlow AI',
   },
-  description: 'A self-sustaining content engine and developer forum covering autonomous AI workflows, budget hardware, and zero-dollar SaaS architectures.',
-  keywords: ['AI Productivity', 'Autonomous Agents', 'Local LLMs', 'Solopreneur', 'Free Tier Architecture', 'Next.js', 'Supabase', 'Mini PC'],
+  description: 'Your definitive guide to everyday AI tools, budget tech deals, smart desk setups, and modern productivity hacks.',
+  keywords: ['Tech Deals', 'AI Tools', 'Budget Tech', 'Productivity', 'Amazon Finds', 'Laptops', 'Headphones', 'ChatGPT', 'Remote Work', 'Desk Setup', 'Mini PC'],
   authors: [{ name: 'SmartFlow AI Editorial' }],
   creator: 'SmartFlow AI',
   publisher: 'SmartFlow AI',
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: '/',
     siteName: 'SmartFlow AI',
-    title: 'SmartFlow AI | Autonomous Workflows & Budget Tech Stack',
-    description: 'Self-sustaining content engine and community forum for solo builders and creators running on $0/month free-tier infrastructure.',
+    title: 'SmartFlow AI | Smart Tech Deals, Everyday AI Tools & Productivity',
+    description: 'Discover the best free AI tools, budget tech deals on Amazon, and productivity workflows to supercharge your daily life.',
     images: [
       {
         url: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1200&auto=format&fit=crop&q=80',

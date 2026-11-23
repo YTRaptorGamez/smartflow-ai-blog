@@ -40,15 +40,15 @@ export default async function HomePage() {
           <div className="max-w-3xl space-y-6">
             <div className="inline-flex items-center gap-2 rounded-full border border-indigo-500/30 bg-indigo-500/10 px-3 py-1 text-xs font-semibold text-indigo-300">
               <Sparkles className="w-3.5 h-3.5 text-indigo-400" />
-              <span>Self-Sustaining $0/Month Infrastructure</span>
+              <span>Smart Tech, Everyday AI &amp; Modern Productivity</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
-              Autonomous AI Workflows & <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-cyan-400 to-indigo-300">Budget Tech Stack</span>
+              Smart Tech Deals, AI Tools &amp; <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-cyan-400 to-indigo-300">Productivity Hacks</span>
             </h1>
 
             <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
-              Automated SEO content generation, budget hardware benchmarks, and a developer community built for solopreneurs—running entirely on free-tier Next.js, Supabase, and Google Gemini API.
+              Honest hardware reviews, the best budget tech on Amazon, free AI tool tutorials, and a vibrant community sharing tips to save time and money every single day.
             </p>
 
             <div className="flex flex-wrap items-center gap-4 pt-2">

@@ -470,6 +470,51 @@ values
     'Blazing 7,450 MB/s read speeds for instant model checkpoint loading into system memory.',
     '$169.99',
     'View on Amazon'
+  ),
+  (
+    'Acer Aspire 5 Slim Laptop (15.6 FHD / 512GB SSD)',
+    ARRAY['laptop', 'budget laptop', 'notebook', 'acer', 'computer', 'school', 'remote work', 'pc'],
+    'https://amazon.com/dp/B0BSLV1ZTX?tag=weegan04-20',
+    'Best Budget Laptop Under $400',
+    'Crisp 1080p IPS display, fast 512GB SSD storage, and all-day battery life for productivity, remote work, and studying.',
+    '$389.99',
+    'Check Amazon Deal & Availability'
+  ),
+  (
+    'Anker Soundcore Space Q20 Hybrid Active Noise Cancelling Headphones',
+    ARRAY['headphones', 'noise cancelling', 'audio', 'anker', 'soundcore', 'focus', 'music'],
+    'https://amazon.com/dp/B07NM3RSRQ?tag=weegan04-20',
+    'Top Budget ANC Pick',
+    'Custom hybrid active noise cancellation cuts ambient background chatter by up to 90% with 40-hour battery life.',
+    '$59.99',
+    'View Deal on Amazon'
+  ),
+  (
+    'Ergonomic Memory Foam Seat Cushion & Lumbar Support',
+    ARRAY['chair', 'seat cushion', 'ergonomic', 'back pain', 'desk setup', 'home office'],
+    'https://amazon.com/dp/B01EBDV9BU?tag=weegan04-20',
+    'Essential Desk Comfort',
+    'Orthopedic memory foam cushion designed to relieve tailbone pressure and prevent lower back pain during long hours.',
+    '$34.99',
+    'Shop on Amazon'
+  ),
+  (
+    'Anker 7-in-1 USB-C Hub Adapter (4K HDMI, 100W Power Delivery)',
+    ARRAY['usb-c', 'hub', 'adapter', 'dongle', 'ports', 'hdmi', 'laptop accessory', 'gadget'],
+    'https://amazon.com/dp/B07ZVKTP53?tag=weegan04-20',
+    'Best Tech Gadget Under $30',
+    'Instant 4K HDMI, 100W Power Delivery pass-through charging, dual USB-A ports, and SD card readers.',
+    '$29.99',
+    'Check Amazon Discount'
+  ),
+  (
+    'Nulaxy Adjustable Aluminum Laptop Stand for Desk',
+    ARRAY['laptop stand', 'stand', 'desk accessory', 'ergonomics', 'cooling', 'amazon find'],
+    'https://amazon.com/dp/B089K62799?tag=weegan04-20',
+    'Bestselling Desk Accessory',
+    'Raises your laptop screen to eye level to prevent neck strain and forward head posture while maximizing airflow.',
+    '$19.99',
+    'View on Amazon'
   )
 on conflict do nothing;
 

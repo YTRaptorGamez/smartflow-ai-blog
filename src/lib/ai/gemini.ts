@@ -13,7 +13,7 @@ export interface GeneratedBlogPayload {
   companion_forum_question: string;
 }
 
-const DEFAULT_NICHE = 'AI Productivity & Budget Autonomous Stack for Solopreneurs';
+const DEFAULT_NICHE = 'Consumer AI Tools, Budget Tech Deals, Home Office Gadgets & Modern Productivity';
 
 /**
  * Robust caller for Gemini API with retry & exponential backoff
@@ -174,13 +174,16 @@ export async function generateBlogPost(topicOverride?: string): Promise<{ post: 
     if (topicItem) {
       topicToUse = topicItem.keyword_or_topic;
     } else {
-      // Fallback topic pool if queue is empty
+      // Fallback topic pool if queue is empty (high-traffic mass market queries)
       const trendingFallbacks = [
-        'How to Run DeepSeek-R1 and Gemma 4 Locally on a $350 Mini PC',
-        'Top 10 Free AI Developer Tools in 2026 That Beat Paid Subscriptions',
-        'Automating Customer Support on Next.js Using Gemini 2.5 Flash and Supabase',
-        'Next.js 15 vs Remix for Solo SaaS: Architecture, SEO and Vercel Cost Comparison',
-        'Building an Autonomous AI Newsletter Engine on $0 Free Tier Infrastructure',
+        'Top 10 Must-Have Tech Gadgets on Amazon Under $50 Everyone Needs in 2026',
+        'Best Budget Laptops for Work, Students, and Daily Use Under $500',
+        'ChatGPT vs Claude vs Gemini in 2026: The Ultimate Guide for Beginners',
+        'Top 7 Free AI Tools That Replace Expensive Monthly Subscriptions',
+        'Best Noise-Cancelling Headphones on a Budget That Rival $300 Premium Brands',
+        'How to Set Up the Ultimate Productive Home Office Desk for Under $250',
+        'How to Automate Boring Everyday Tasks with AI (No Coding Required)',
+        'Top AI Side Hustles You Can Start Today with $0 Upfront Cost',
       ];
       topicToUse = trendingFallbacks[Math.floor(Math.random() * trendingFallbacks.length)];
     }
@@ -190,24 +193,24 @@ export async function generateBlogPost(topicOverride?: string): Promise<{ post: 
 
   try {
     const prompt = `
-You are a world-class technology journalist, SEO strategist, and full-stack software engineer specializing in "${DEFAULT_NICHE}".
-Write a comprehensive, publication-ready, deeply informative blog post on the following topic:
+You are a top-tier consumer technology journalist, viral content creator, and SEO strategist specializing in "${DEFAULT_NICHE}".
+Write a comprehensive, publication-ready, engaging, and highly readable blog post on the following topic:
 "${topicToUse}"
 
 Requirements:
-1. Title: High-CTR, compelling, professional SEO headline.
+1. Title: High-CTR, viral, compelling, clickable SEO headline that everyday consumers and professionals search for.
 2. Slug: Clean, hyphenated URL slug.
-3. Meta Description: 140-160 characters, concise and punchy.
-4. Tags: 3 to 5 relevant technical tags.
-5. Suggested Product Keywords: 3 to 5 hardware, SaaS, or developer tool keywords (e.g., 'mini pc', 'cursor', 'make.com', 'notion', 'keyboard', 'supabase').
-6. Companion Forum Question: An open-ended, thought-provoking discussion question to seed our developer community forum regarding this article.
-7. Markdown Content: 1,000+ words of actionable content formatted in beautiful GitHub markdown with:
-   - Engaging opening hook explaining the solopreneur / developer stakes.
-   - Clear H2 and H3 headings.
-   - Practical step-by-step workflow with realistic code snippet or shell script.
-   - A markdown comparison table or benchmark.
-   - Actionable takeaways checklist.
-   - No boilerplate fluff. Provide real numbers, architecture insights, and honest trade-offs.
+3. Meta Description: 140-160 characters, punchy and enticing.
+4. Tags: 3 to 5 popular consumer tech or productivity tags (e.g. 'Tech Deals', 'AI Tools', 'Budget Tech', 'Productivity', 'Amazon Finds').
+5. Suggested Product Keywords: 3 to 5 matching consumer products (e.g. 'laptop', 'headphones', 'keyboard', 'usb-c', 'stand', 'chair', 'mini pc', 'notion', 'cursor').
+6. Companion Forum Question: An engaging, open-ended question that makes everyday readers want to chime in with their opinions or setups in our community forum.
+7. Markdown Content: 1,000+ words of actionable, engaging content formatted in clean GitHub markdown with:
+   - High-energy opening hook explaining why this matters for saving money or saving time.
+   - Clear H2 and H3 subheadings with bullet points.
+   - Real product comparisons, specs, and price-to-performance rankings.
+   - A markdown comparison table summarizing pros, cons, and price brackets.
+   - Actionable takeaways checklist for everyday buyers and power users.
+   - Engaging tone: clear, jargon-free, friendly, authoritative, and direct.
 
 Output format must be strict JSON matching this structure:
 {

@@ -31,7 +31,7 @@ export function Navbar() {
                 SmartFlow<span className="text-indigo-400">AI</span>
               </span>
               <span className="text-[10px] text-slate-400 -mt-1 font-mono tracking-wider">
-                AUTONOMOUS STACK
+                AI &amp; TECH DEALS
               </span>
             </div>
           </Link>
