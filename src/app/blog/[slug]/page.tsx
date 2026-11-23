@@ -8,6 +8,7 @@ import { MarkdownRenderer } from '@/components/MarkdownRenderer';
 import { AffiliateDisclosure } from '@/components/AffiliateDisclosure';
 import { AdSlot } from '@/components/AdSlot';
 import { JsonLdArticle } from '@/components/JsonLdArticle';
+import { SocialShareBar } from '@/components/SocialShareBar';
 import { Clock, Eye, Calendar, ArrowLeft, MessageSquare, Bot } from 'lucide-react';
 
 interface BlogPostPageProps {
@@ -22,7 +23,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     return { title: 'Post Not Found | SmartFlow AI' };
   }
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://smartflow.ai';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://smartflow-ai-blog.vercel.app';
 
   return {
     title: `${post.title} | SmartFlow AI`,
@@ -63,7 +64,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     notFound();
   }
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://smartflow-ai-blog.vercel.app';
 
   // Find linked companion forum thread
   const threads = await db.getThreads();
@@ -127,6 +128,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               {post.views} views
             </span>
           </div>
+
+          <SocialShareBar title={post.title} url={`${siteUrl}/blog/${post.slug}`} />
         </header>
 
         {/* Featured Image */}
@@ -147,6 +150,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         <article className="py-2">
           <MarkdownRenderer content={post.content} />
         </article>
+
+        <SocialShareBar title={post.title} url={`${siteUrl}/blog/${post.slug}`} />
 
         {/* In-Article Ad Slot */}
         <AdSlot position="in-article" />
