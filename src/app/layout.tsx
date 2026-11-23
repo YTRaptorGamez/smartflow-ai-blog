@@ -38,6 +38,9 @@ export const metadata: Metadata = {
     description: 'Autonomous AI workflows, budget local LLM hardware, and $0/mo free-tier engineering.',
     images: ['https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1200&auto=format&fit=crop&q=80'],
   },
+  verification: {
+    google: 'TOhEevctGO8ftQILFFVvbaZKaXx93oRonabl9k1xx2k',
+  },
 };
 
 export default function RootLayout({
@@ -51,6 +54,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <head>
+        <meta name="google-site-verification" content="TOhEevctGO8ftQILFFVvbaZKaXx93oRonabl9k1xx2k" />
         {isRealAdsenseId && (
           <Script
             async

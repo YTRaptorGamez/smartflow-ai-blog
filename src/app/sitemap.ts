@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { db } from '@/lib/supabase/service';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://smartflow.ai';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://smartflow-ai-blog.vercel.app';
 
   const [posts, threads] = await Promise.all([
     db.getPosts(),

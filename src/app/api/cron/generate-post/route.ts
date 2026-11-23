@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { verifyCronAuth } from '@/lib/auth/cron-auth';
 import { generateBlogPost } from '@/lib/ai/gemini';
 import { db } from '@/lib/supabase/service';
+import { submitToIndexNow } from '@/lib/seo/indexnow';
 
 export const dynamic = 'force-dynamic';
 export const maxDuration = 60; // 60 seconds max runtime for generative AI
@@ -26,6 +27,14 @@ export async function POST(req: NextRequest) {
   try {
     const { post, seededThread } = await generateBlogPost(topicOverride);
     const executionTimeMs = Date.now() - startTime;
+
+    // Submit newly minted URLs to IndexNow for instant search engine indexing
+    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://smartflow-ai-blog.vercel.app';
+    const urlsToIndex = [`${siteUrl}/blog/${post.slug}`];
+    if (seededThread) {
+      urlsToIndex.push(`${siteUrl}/forum/${seededThread.slug}`);
+    }
+    submitToIndexNow(urlsToIndex).catch((e) => console.error('Failed to notify IndexNow:', e));
 
     await db.logCronExecution(
       'generate-post',

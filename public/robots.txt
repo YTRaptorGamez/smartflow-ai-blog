@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api/cron
+
+Sitemap: https://smartflow-ai-blog.vercel.app/sitemap.xml
