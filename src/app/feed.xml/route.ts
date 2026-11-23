@@ -5,7 +5,7 @@ export const dynamic = 'force-dynamic';
 
 export async function GET() {
   const posts = await db.getPosts();
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://smartflow.ai';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://smartflow-ai-blog.vercel.app';
 
   const itemsXml = posts
     .map(
