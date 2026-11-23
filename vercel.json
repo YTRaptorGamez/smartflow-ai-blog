@@ -1,0 +1,16 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/generate-post",
+      "schedule": "0 10 * * 1,3,5"
+    },
+    {
+      "path": "/api/cron/seed-forum",
+      "schedule": "0 14 * * *"
+    },
+    {
+      "path": "/api/cron/bot-reply",
+      "schedule": "0 20 * * *"
+    }
+  ]
+}
