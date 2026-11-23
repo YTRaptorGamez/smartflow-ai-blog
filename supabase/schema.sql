@@ -411,7 +411,7 @@ values
   (
     'Beelink SER5 Pro Mini PC (32GB RAM / 1TB SSD)',
     ARRAY['mini pc', 'local llm', 'budget hardware', 'hardware', 'deepseek', 'gemma', 'ram'],
-    'https://amazon.com/dp/B0B5TFF75V?tag=smartflowai-20',
+    'https://amazon.com/dp/B0B5TFF75V?tag=weegan04-20',
     'Best Budget Local LLM Box',
     'The most cost-effective hardware solution to host 7B-14B parameter AI models locally without cloud GPU bills.',
     '$349.00',
@@ -445,13 +445,31 @@ values
     'Get 1,000 Free Operations on Make'
   ),
   (
-    'Keychron K2 Pro Wireless Mechanical Keyboard',
+    'Keychron K2 Wireless Mechanical Keyboard',
     ARRAY['keychron', 'keyboard', 'desk setup', 'budget tech', 'ergonomics', 'hardware'],
-    'https://keychron.com/products/k2-pro?ref=smartflow',
+    'https://amazon.com/dp/B07QCP6656?tag=weegan04-20',
     'Top Ergonomic Pick',
     'Hot-swappable tactile mechanical keyboard engineered for marathon developer typing sessions.',
-    '$79.00',
-    'Shop Keychron Direct Sale'
+    '$79.99',
+    'Check Amazon Discount'
+  ),
+  (
+    'Crucial RAM 32GB Kit (2x16GB) DDR4/DDR5 Laptop/Mini PC Memory',
+    ARRAY['crucial', 'ram', 'memory', 'ddr4', 'ddr5', 'upgrade', 'local llm hardware'],
+    'https://amazon.com/dp/B08C4X98GK?tag=weegan04-20',
+    'Essential LLM Upgrade',
+    'Double your mini PC memory to easily load 14B and 32B quantized AI models with low latency.',
+    '$64.99',
+    'View on Amazon'
+  ),
+  (
+    'Samsung 990 PRO 2TB PCIe 4.0 NVMe SSD',
+    ARRAY['ssd', 'nvme', 'samsung', 'storage', 'fast drive', 'model weights', 'download'],
+    'https://amazon.com/dp/B0BHJJ9Y77?tag=weegan04-20',
+    'High-Speed LLM Storage',
+    'Blazing 7,450 MB/s read speeds for instant model checkpoint loading into system memory.',
+    '$169.99',
+    'View on Amazon'
   )
 on conflict do nothing;
 

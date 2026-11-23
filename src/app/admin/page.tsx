@@ -26,7 +26,7 @@ export default function AdminDashboardPage() {
 
   // Monetization wizard state
   const [monetizationForm, setMonetizationForm] = useState({
-    amazon_tag: 'smartflowai-20',
+    amazon_tag: 'weegan04-20',
     cursor_ref: 'smartflow',
     notion_ref: 'smartflow',
     make_ref: 'smartflow',
