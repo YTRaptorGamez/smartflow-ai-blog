@@ -55,6 +55,7 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <head>
         <meta name="google-site-verification" content="TOhEevctGO8ftQILFFVvbaZKaXx93oRonabl9k1xx2k" />
+        <link rel="alternate" type="application/rss+xml" title="SmartFlow AI RSS Feed" href="https://smartflow-ai-blog.vercel.app/feed.xml" />
         {isRealAdsenseId && (
           <Script
             async
