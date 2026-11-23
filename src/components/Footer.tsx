@@ -50,12 +50,14 @@ export function Footer() {
 
           {/* Admin & Automation */}
           <div>
-            <h4 className="text-xs font-semibold text-slate-200 uppercase tracking-wider mb-3">Platform & Admin</h4>
+            <h4 className="text-xs font-semibold text-slate-200 uppercase tracking-wider mb-3">Transparency & Legal</h4>
             <ul className="space-y-2">
-              <li><Link href="/admin" className="inline-flex items-center gap-1 hover:text-indigo-400 transition"><Shield className="w-3 h-3 text-indigo-400" /> Admin Command Center</Link></li>
+              <li><Link href="/about" className="hover:text-indigo-400 transition">About SmartFlow AI</Link></li>
+              <li><Link href="/privacy" className="hover:text-indigo-400 transition">Privacy & Cookie Policy</Link></li>
+              <li><Link href="/terms" className="hover:text-indigo-400 transition">Terms of Service</Link></li>
+              <li><a href="/ads.txt" target="_blank" className="hover:text-indigo-400 transition">IAB ads.txt</a></li>
               <li><Link href="/sitemap.xml" className="hover:text-indigo-400 transition">XML Sitemap</Link></li>
-              <li><span className="text-slate-400 font-mono text-[11px]">Powered by Gemini 2.5 Flash</span></li>
-              <li><span className="text-slate-400 font-mono text-[11px]">Supabase PostgreSQL + RLS</span></li>
+              <li><Link href="/admin" className="inline-flex items-center gap-1 hover:text-indigo-400 transition"><Shield className="w-3 h-3 text-indigo-400" /> Admin Command Center</Link></li>
             </ul>
           </div>
         </div>
